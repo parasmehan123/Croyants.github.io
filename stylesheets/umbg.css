@@ -1,0 +1,330 @@
+/**
+ * Ultimate Media Background CSS Document
+ * For: UMBG jQuery Plugin v1.1, v1.2, v1.3
+ *      http://codecanyon.net/user/theefarmer?ref=theefarmer
+ *      http://theefarmer.com
+ *
+ * Author: TheeFarmer | Alendee Internet Solutions
+ * Copyright: (c) 2015 Alendee Internet Solutions
+ *
+ * Last Change: 2015-09-22 - Add FIO class styles (.umbg-fade-in-out).
+ *              2015-06-16 - Fix CSS class rule .umbg-player-controls z-index for mobile phone issue.
+ *              2015-05-25 - Initial release.
+ **/
+
+/*------------------------------------------------------------------------------
+    Table of Contents
+
+    1. Import Font-Awesome Styles
+
+    2. Iframe Player & Poster Styles
+
+    3. Overlay Styles
+        3.1 Overlay Pattern Styles
+        3.2 Background Patterns From TransparentTextures.com
+
+------------------------------------------------------------------------------*/
+
+
+
+/* UMBG fa styles override fix */
+.umbg-player-controls .fa-pause::before, .umbg-player-controls .fa-play::before, .umbg-player-controls .fa-volume-up::before, .umbg-player-controls .fa-volume-off::before, .umbg-player-controls .fa-file::before, .umbg-player-controls .fa-file-o::before {
+    left: 0;
+    padding: 0 !important;
+    position: relative !important;
+}
+
+
+
+/*------------------------------------------------------------------------------
+    2. Iframe Player & Poster Styles
+------------------------------------------------------------------------------*/
+
+#umbg, .umbg {
+    max-height: none;
+    max-width: none;
+    position: fixed;
+    z-index: -100;
+}
+
+.umbg-mobile-poster {
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    left: 50%;
+    min-height: 100% !important;
+    min-width: 100% !important;
+    max-width: none !important;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -95;
+}
+
+.umbg-player-controls {
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1.325rem;
+    line-height: 1rem;
+    padding: 5px 5px 3px;
+    position: fixed;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+
+}
+
+/* Control Placement */
+.umbg-br {
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+.umbg-bl {
+    bottom: 0.5rem;
+    left: 0.5rem;
+}
+
+.umbg-tr {
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+.umbg-tl {
+    left: 0.5rem;
+    top: 0.5rem;
+}
+
+/* Control Buttons */
+.umbg-volume-button,
+.umbg-play-button,
+.umbg-page-up-down,
+.umbg-fade-in-out {
+    /*padding: 3px 5px;*/
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin: 2px;
+    /*overflow: hidden;*/
+    padding: 0;
+    text-align: center;
+    width: 19px;
+}
+
+.umbg-volume-button:hover,
+.umbg-play-button:hover,
+.umbg-page-up-down:hover,
+.umbg-fade-in-out:hover {
+    color: #fff
+}
+
+.umbg-volume-button {
+    margin-left: 3px;
+    text-align: left;
+}
+
+
+/*------------------------------------------------------------------------------
+    3. Overlay Styles
+------------------------------------------------------------------------------*/
+
+/*  3.1 Overlay Pattern Styles
+------------------------------------------------------------------------------*/
+.umbg-overlay {
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -90;
+}
+
+.umbg-overlay-transparent {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAADElEQVQImWNgoBMAAABpAAFEI8ARAAAAAElFTkSuQmCC') repeat;
+}
+
+.umbg-overlay-square-grid {
+    /*background-attachment: fixed;*/
+    /*background-color: rgba(0,0,0, 0.4);*/
+    background-image: linear-gradient(rgba(95, 95, 95, .125) 2px, transparent 2px), linear-gradient(90deg, rgba(95, 95, 95, .125) 2px, transparent 2px);
+    background-repeat: repeat;
+    background-size: 8px 8px, 8px 8px;
+}
+
+.umbg-overlay-stairs {
+    background: linear-gradient(63deg, rgba(153, 153, 153, .125) 23%, transparent 23%) 7px 0, linear-gradient(63deg, transparent 74%, rgba(153, 153, 153, .125) 78%), linear-gradient(63deg, transparent 34%, rgba(153, 153, 153, .125) 38%, rgba(153, 153, 153, .125) 58%, transparent 62%), rgba(0, 0, 0, .5);
+    background-size: 16px 48px;
+}
+
+.umbg-overlay-pattern1 {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAOklEQVQYlWMQE5NoYEAC6HwUMRgDryKiTEIXQJYgaJKYmEQDNtMxAFEK8VqNT4IoH2PIEeNwMTGJBgAC8hJhlT3UDwAAAABJRU5ErkJggg==') repeat;
+}
+
+
+.umbg-overlay-pattern2-a {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFElEQVQImWNgYGD4z8DAIMUAJaQAD6QBTlGSgDMAAAAASUVORK5CYII=') repeat;
+}
+
+.umbg-overlay-pattern2-b {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFUlEQVQImWNgYGCQYmBg+M8AZUgBAAwQAU4HqrzZAAAAAElFTkSuQmCC') repeat;
+}
+
+.umbg-overlay-pattern3-a {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQImWNgYGBoYIAAXwYkgCLoiyaIorwBAGheAzViiyauAAAAAElFTkSuQmCC') repeat;
+}
+
+.umbg-overlay-pattern3-b {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAFklEQVQImWNggABfKN2AwWFA4/hicABoXgM1rh+fsQAAAABJRU5ErkJggg==') repeat;
+}
+
+.umbg-overlay-diagonal {
+    background-color: transparent;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAFUlEQVQImWNgQANiYhINVBdgYGAAAMZDA9UDRfKQAAAAAElFTkSuQmCC');
+    background-repeat: repeat;
+}
+
+.umbg-overlay-diagonal-dark {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQImWNgYGBoQML/GdA4DQxonAYGNE4DAETRCf2vrYUZAAAAAElFTkSuQmCC') repeat;
+}
+
+.umbg-overlay-diagonal-wide {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAF0lEQVQYlWNgIAKIiUk0jCqipyIGBgYAHTwHqSW3/dkAAAAASUVORK5CYII=') repeat;
+}
+
+.umbg-overlay-dots1 {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVQYlWNgGAX0BWJiEg3EqAMAHnQAxcaw+CkAAAAASUVORK5CYII=') repeat;
+}
+
+.umbg-overlay-dots2 {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEklEQVQImWNgoAEQE5NoQBcDAA3zAMWCGPxYAAAAAElFTkSuQmCC') repeat;
+}
+
+.umbg-overlay-dots3 {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAFElEQVQImWNgQANiYhIN6GLUUAEAdx8CTedFJOUAAAAASUVORK5CYII=') repeat;
+}
+
+.umbg-overlay-dots4 {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC') repeat;
+}
+
+.umbg-overlay-dots4-dark {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQImWNgYGD4z8DAkIaEUTgoAv+xqgAAAukHkzUbEEgAAAAASUVORK5CYII=') repeat;
+}
+
+.umbg-overlay-dots5 {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFElEQVQImWNgYGD4z8DAIMUAJaQAD6QBTlGSgDMAAAAASUVORK5CYII=') repeat;
+}
+
+.umbg-overlay-dots6 {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQImWNgYGBIY4AAKQYkgCIohSaIojwNAEFEAgGQSO2+AAAAAElFTkSuQmCC') repeat;
+}
+
+.umbg-overlay-lines {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAQElEQVQYlW2OwQ0AMAgCbw7XcMFubj81RVpeGgIcQHK1gJC/+shjtkLNTmpTaZMm05IB76YzfTedaW46k28Opg1VYQ5hW3JdzwAAAABJRU5ErkJggg==') repeat;
+}
+
+/*  3.2 Background Patterns From TransparentTextures.com & SubtlePatterns.com
+------------------------------------------------------------------------------*/
+.umbg-overlay-3px-tile {
+    background: url('../images/overlays/3px-tile.png') repeat;
+}
+
+.umbg-overlay-light-sketch {
+    background: url('../images/overlays/light-sketch.png') repeat;
+}
+
+.umbg-overlay-light-wool {
+    background: url('../images/overlays/light-wool.png') repeat;
+}
+
+.umbg-overlay-small-diamond {
+    background: url('../images/overlays/small-diamond.png') repeat;
+}
+
+.umbg-overlay-textured-stripes {
+    background: url('../images/overlays/textured-stripes.png') repeat;
+}
+
+.umbg-overlay-wave-grid {
+    background: url('../images/overlays/wave-grid.png') repeat;
+}
+
+.umbg-overlay-wavecut {
+    background: url('../images/overlays/wavecut.png') repeat;
+}
+
+.umbg-overlay-white-diamond {
+    background: url('../images/overlays/white-diamond.png') repeat;
+}
+
+.umbg-overlay-wine-cork {
+    background: url('../images/overlays/wine-cork.png') repeat;
+}
+
+.umbg-overlay-wood-pattern {
+    background: url('../images/overlays/wood-pattern.png') repeat;
+}
+
+.umbg-overlay-xv {
+    background: url('../images/overlays/xv.png') repeat;
+}
+
+.umbg-overlay-inflicted {
+    background: url('../images/overlays/inflicted.png') repeat;
+}
+
+.umbg-overlay-hexellence {
+    background: url('../images/overlays/hexellence.png') repeat;
+}
+
+.umbg-overlay-groovepaper {
+    background: url('../images/overlays/groovepaper.png') repeat;
+}
+
+.umbg-overlay-grunge-wall {
+    background: url('../images/overlays/grunge-wall.png') repeat;
+}
+
+.umbg-overlay-grid-noise {
+    background: url('../images/overlays/grid-noise.png') repeat;
+}
+
+.umbg-overlay-grid {
+    background: url('../images/overlays/grid.png') repeat;
+}
+
+.umbg-overlay-grey-jean {
+    background: url('../images/overlays/grey-jean.png') repeat;
+}
+
+.umbg-overlay-green-fibers {
+    background: url('../images/overlays/green-fibers.png') repeat;
+}
+
+.umbg-overlay-green-dust-and-scratches {
+    background: url('../images/overlays/green-dust-and-scratches.png') repeat;
+}
+
+.umbg-overlay-french-stucco {
+    background: url('../images/overlays/french-stucco.png') repeat;
+}
+
+.umbg-overlay-first-aid-kit {
+    background: url('../images/overlays/first-aid-kit.png') repeat;
+}
+
+.umbg-overlay-graphy-dark {
+    background: url('../images/overlays/graphy-dark.png') repeat;
+}
+
+.umbg-overlay-dotnoise-light-grey {
+    background: url('../images/overlays/dotnoise-light-grey.png') repeat;
+}
+
+.umbg-overlay-fabric-of-squares {
+    background: url('../images/overlays/fabric-of-squares.png') repeat;
+}
+
+.umbg-overlay-subtle-grey {
+    background: url('../images/overlays/subtle-grey.png') repeat;
+}

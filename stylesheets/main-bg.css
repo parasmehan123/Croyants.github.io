@@ -1,0 +1,152 @@
+/* MAIN-BG.CSS contains Background Image paths & definition rules powered by CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to replace any BG image is to add image URL in url('....') area of related classname.
+If you need assistance, please go to http://www.designova.net/downloads.html and request a downloadable 
+ZIP pack contains original live preview version with all preview images linked properly, so you can easily 
+replace preview images directly;
+*/
+
+/*SLANT BG IMAGES*/
+.slant-layer.studio-bg:first-child:before {
+    background-image: url('../images/slants/02.jpg');
+}
+.slant-layer.personal-bg:first-child:before {
+    background-image: url('../images/slants/03.jpg');
+}
+.slant-layer.team-bg:first-child:before {
+    background-image: url('../images/slants/01.jpg');
+}
+.slant-layer.post-bg:first-child:before {
+    background-image: url('../images/slants/06.jpg');
+}
+.slant-layer.wall-bg:first-child:before {
+    background-image: url('../images/slants/04.jpg');
+}
+.slant-layer.pricing-bg:first-child:before {
+    background-image: url('../images/slants/05.jpg');
+}
+.slant-layer.contact-bg:first-child:before {
+    background-image: url('../images/slants/07.jpg');
+}
+
+
+/*SECTION BG IMAGES*/
+footer.mastfoot{
+    background-image: url('../images/bg/footer.jpg');
+}
+.services-bg {
+    background-image: url('../images/bg/02.jpg');
+}
+
+
+/*NEWS POSTS BG*/
+.journal-item-01-bg{
+    background-image: url('../images/journals/01.jpg');
+}
+.journal-item-02-bg{
+    background-image: url('../images/journals/02.jpg');
+}
+.journal-item-03-bg{
+    background-image: url('../images/journals/03.jpg');
+}
+.journal-item-04-bg{
+    background-image: url('../images/journals/04.jpg');
+}
+.journal-item-05-bg{
+    background-image: url('../images/journals/05.jpg');
+}
+.journal-item-06-bg{
+    background-image: url('../images/journals/06.jpg');
+}
+
+
+/*FULLSCREEN LANDING*/
+.fullscreen-portfolio-01{
+    background-image: url('../images/fullscreen/01a.jpg');
+}
+.fullscreen-portfolio-02{
+    background-image: url('../images/fullscreen/01b.jpg');
+}
+.fullscreen-portfolio-03{
+    background-image: url('../images/fullscreen/02a.jpg');
+}
+.fullscreen-portfolio-04{
+    background-image: url('../images/fullscreen/02b.jpg');
+}
+.fullscreen-portfolio-05{
+    background-image: url('../images/fullscreen/03a.jpg');
+}
+.fullscreen-portfolio-06{
+    background-image: url('../images/fullscreen/03b.jpg');
+}
+.fullscreen-portfolio-07{
+    background-image: url('../images/fullscreen/04a.jpg');
+}
+.fullscreen-portfolio-08{
+    background-image: url('../images/fullscreen/04b.jpg');
+}
+
+/*PROJECT PAGE*/
+.agency-carousel-item-01{
+    background-image: url('../images/agency/01.jpg');
+}
+.agency-carousel-item-02{
+    background-image: url('../images/agency/02.jpg');
+}
+.agency-carousel-item-03{
+    background-image: url('../images/agency/03.jpg');
+}
+.agency-carousel-item-04{
+    background-image: url('../images/agency/04.jpg');
+}
+
+
+/*AGENCY LANDING*/
+.project-01-bg-01{
+    background-image: url('../images/project/01.jpg');
+}
+.project-01-bg-02{
+    background-image: url('../images/project/02.jpg');
+}
+.project-01-bg-03{
+    background-image: url('../images/project/03.jpg');
+}
+.project-01-bg-04{
+    background-image: url('../images/project/04.jpg');
+}
+
+
+/*CAROUSEL LANDING*/
+.horizontal-carousel-item-01{
+    background-image: url('../images/works/split//01.jpg');
+}
+.horizontal-carousel-item-02{
+    background-image: url('../images/works/split//02.jpg');
+}
+.horizontal-carousel-item-03{
+    background-image: url('../images/works/split//03.jpg');
+}
+.horizontal-carousel-item-04{
+    background-image: url('../images/works/split//04.jpg');
+}
+
+/*SPLIT PORTFOLIO*/
+.split-portfolio-01{
+    background-image: url('../images/works/split/01.jpg');
+}
+.split-portfolio-02{
+    background-image: url('../images/works/split/02.jpg');
+}
+.split-portfolio-03{
+    background-image: url('../images/works/split/03.jpg');
+}
+.split-portfolio-04{
+    background-image: url('../images/works/split/04.jpg');
+}
+.split-portfolio-05{
+    background-image: url('../images/works/split/05.jpg');
+}
+.split-portfolio-06{
+    background-image: url('../images/works/split/06.jpg');
+}

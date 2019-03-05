@@ -1,0 +1,346 @@
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries 
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it 
+there. 
+*/
+
+
+/* Larger than Desktop HD */
+@media (max-width: 1200px) {
+    .container {
+        width: 1100px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/* Larger than desktop */
+@media (max-width: 992px) {
+    .container {
+        width: 892px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .text-left, .text-right {
+        text-align: center;
+    }
+
+    .img-responsive {
+        display: inline-block;
+    }
+    .page-caps{
+        display: none;
+    }
+    .journal-item{
+        padding: 40px 0;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    .menu-panel ul li a{
+        font-size: 20px !important;
+        line-height: 40px !important;
+    }
+    .sub-menu li{
+        display: block !important;
+    }
+    .works-masonry-container .masonry-item{
+        width: 50% !important;
+    }
+    .studio-services-inner{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .slant-bg-wrap {
+      width: 100%;
+      height: 100%;
+    }
+    .slant-layer {
+        overflow: hidden;
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+      transform: none;
+    }
+    .slant-layer::before{
+        height: 100%;
+        overflow: hidden;
+    }
+    .menu-icon-trigger{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon{
+        left: 38px;
+        top: 80px;
+    }
+}
+
+/* Larger than tablet */
+@media (max-width: 768px) {
+    .container {
+        width: 668px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .text-left, .text-right, .mastfoot{
+        text-align: center;
+    }
+
+    .img-responsive {
+        display: inline-block;
+    }
+
+    .works-filter-panel{
+      padding: 20px 50px;
+    }
+    .menu-icon-trigger{
+        z-index: 9999;
+    }
+
+}
+
+/*iPhone 6Plus Landscape Mode*/
+@media screen and (max-width: 736px) {
+    .container {
+        width: 636px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
+/*iPhone 6 Landscape Mode*/
+@media screen and (max-width: 667px) {
+    .container {
+        width: 567px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .menu-panel ul li a{
+        font-size: 16px !important;
+        line-height: 38px !important;
+    }
+}
+
+
+/*Google Nexus and Other Large Smart Phones v1*/
+@media screen and (max-width: 600px) {
+    .container {
+        width: 500px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .boxed-caption{
+        padding: 15px !important;
+        max-width: 120px !important;
+    }
+    .boxed-caption h3, .boxed-caption p{
+        font-size: 10px !important;
+        line-height: 17px !important;
+    }
+    header.masthead{
+        padding: 5px;
+        width: 50px;
+    }
+    section.subwrap{
+        padding-left: 0px;
+        text-align: center;
+    }
+    .menu-icon-wrapper{
+        margin: 3px;
+    }
+    .mobile-menu-icon{
+        left: 14px;
+        top: 40px;
+    }
+    .main-logo{
+        max-width:30px;
+    }
+    .mastnav-bordered{
+        border-width: 50px;
+    }
+    .intro-01 .ms-section img{
+            -ms-transform: scale(1); /* IE 9 */
+            -webkit-transform: scale(1); /* Safari */
+            -moz-transform: scale(1); /* Firefox */
+            -opera-transform: scale(1); /* opera */
+            transform: scale(1);
+    }
+    .intro-01 .ms-right .ms-section, .intro-01 .ms-left .ms-section{
+            -ms-transform: translateX(0px); /* IE 9 */
+            -webkit-transform: translateX(0px); /* Safari */
+            -mox-transform: translateX(0px); /* firefox */
+            -o-transform: translateX(0px); /* opera */
+            transform: translateX(0px);
+    }
+    .intro-03 .agency-carousel-item{
+        padding: 10px;
+    }
+    .intro-03 .agency-carousel-item h1{
+        font-size: 12px;
+        line-height: 19px;
+    }
+    .menu-icon-trigger{
+        top: 0;
+        margin-top: 50px;
+    }
+    .fold-promo h1, .fold-promo h1 > strong{
+        font-size: 24px;
+        line-height: 31px;
+        text-align: center;
+    }
+    .studio-approach h2, .testimonial-text h3, .project-caption h3{
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+    }
+    .promo-text, .inner-heading, .testimonial-text p, .services-item, 
+    .team-text h3, .team-text p, .team-social ul, .journal-text, .journal-social ul, 
+    .project-caption, .project-spec-wrap{
+        text-align: center;
+    }
+    .studio-approach-count{
+        border: none;
+        padding: 0;
+        height: auto;
+        width: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .testimonial-text p::before, .team-text.dark-bg p::before, 
+    .journal-text.white p::before, .project-caption p::before{
+        display: none !important;
+    }
+    .studio-services-inner{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .services-item{
+        margin-bottom: 40px;
+    }
+    footer.mastfoot .foot-logo{
+        margin-bottom: 20px;
+    }
+    .features-item{
+        margin-top: 40px;
+    }
+    #ws{
+        margin-right: 20px;
+    -ms-transform: translateX(-20px); /* IE 9 */
+    -webkit-transform: translateX(-20px); /* Safari */
+    -moz-transform: translateX(-20px); /* firefox */
+    -o-transform: translateX(-20px); /* opera */
+    transform: translateX(-20px);
+    }
+    .project-carousel-wrap{
+        height: auto !important;
+    }
+    .project-spec-wrap{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .journal-item{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .add-top {
+        margin-top: 80px;
+    }
+
+    .add-top-half {
+        margin-top: 40px;
+    }
+
+    .add-top-quarter {
+        margin-top: 20px;
+    }
+
+    .add-bottom {
+        margin-bottom: 80px;
+    }
+
+    .add-bottom-half {
+        margin-bottom: 40px;
+    }
+
+    .add-bottom-quarter {
+        margin-bottom: 20px;
+    }
+
+    .pad {
+        padding: 60px;
+    }
+
+    .pad-top {
+        padding-top: 80px;
+    }
+
+    .pad-top-half {
+        padding-top: 40px;
+    }
+
+    .pad-top-quarter {
+        padding-top: 20px;
+    }
+
+    .pad-bottom {
+        padding-bottom: 80px;
+    }
+
+    .pad-bottom-half {
+        padding-bottom: 40px;
+    }
+
+    .pad-bottom-quarter {
+        padding-bottom: 20px;
+    }
+
+}
+
+/*iPhone Landscape Mode and Mediium Smart Phones*/
+@media screen and (max-width: 480px) {
+    .container {
+        width: 400px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .works-masonry-container .masonry-item{
+        width: 100% !important;
+    }
+}
+
+/*iPhone 6Plus Portrait Mode*/
+@media screen and (max-width: 414px) {
+    .container {
+        width: 374px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/*iPhone 6 Portrait Mode*/
+@media screen and (max-width: 375px) {
+    .container {
+        width: 335px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/*iPhone 5S, 5, 4S & 4 Portrait Mode and Very Small Mobile Phones*/
+@media screen and (max-width: 320px) {
+    .container {
+        width: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
